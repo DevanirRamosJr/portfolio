@@ -1,0 +1,13 @@
+# Este site é intencionalmente mantido fora dos resultados de busca.
+#
+# O bloqueio real NÃO está aqui: está no <meta name="robots" content="noindex">
+# de cada página e no header X-Robots-Tag (arquivo _headers).
+#
+# ATENÇÃO — não troque as linhas abaixo por "Disallow: /".
+# Parece que reforçaria, mas faz o contrário: um crawler proibido de baixar a
+# página nunca chega a ler a tag noindex. A URL então pode continuar no índice,
+# aparecendo na busca sem título nem descrição, alimentada só por links de fora.
+# Para sair do índice, o rastreio precisa ser PERMITIDO e a indexação negada.
+
+User-agent: *
+Allow: /

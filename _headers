@@ -1,0 +1,13 @@
+# Headers do Cloudflare Pages. Este arquivo vai na raiz do repositório,
+# junto do index.html. O Cloudflare lê sozinho — não precisa configurar nada
+# no painel. (No GitHub Pages ele é ignorado: lá vale só a meta tag.)
+
+/*
+  # Mesma coisa que a meta robots, mas no nível do servidor: cobre também o
+  # PDF do currículo e qualquer outro arquivo que não seja HTML e por isso
+  # não possa carregar uma meta tag.
+  X-Robots-Tag: noindex, nofollow
+
+  # Segurança básica, de graça
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
